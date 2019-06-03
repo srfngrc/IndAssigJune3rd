@@ -13,9 +13,9 @@ namespace IA2_CALCULATOR_srfn
     public partial class BasicCalculator : Form
     {
         string textToOutput = "";
-        int temporalcounter = 0; //Result of the parse of keyboard's data insertion to integer
-        public int counter1 = 0; //Initial counter
-        public int counter2 = 0; //Second counter
+        double temporalcounter = 0.0; //Result of the parse of keyboard's data insertion to integer
+        public double counter1 = 0.0; //Initial counter
+        public double counter2 = 0.0; //Second counter
         bool boolvariable;
         public string operator2019 = "Empty";
         public BasicCalculator()
@@ -26,14 +26,14 @@ namespace IA2_CALCULATOR_srfn
         {
             textToOutput = textToOutput + "1";
             txtMain.Text = textToOutput;
-            boolvariable = int.TryParse(textToOutput,out temporalcounter);
+            boolvariable = double.TryParse(textToOutput,out temporalcounter);
         }
 
         private void Button2_Click(object sender, EventArgs e)
         {
             textToOutput = textToOutput + "2";
             txtMain.Text = textToOutput;
-            boolvariable = int.TryParse(textToOutput, out temporalcounter);
+            boolvariable = double.TryParse(textToOutput, out temporalcounter);
         }
 
         
@@ -41,65 +41,72 @@ namespace IA2_CALCULATOR_srfn
         {
             textToOutput = textToOutput + "3";
             txtMain.Text = textToOutput;
-            boolvariable = int.TryParse(textToOutput, out temporalcounter);
+            boolvariable = double.TryParse(textToOutput, out temporalcounter);
         }
 
         private void Button4_Click(object sender, EventArgs e)
         {
             textToOutput = textToOutput + "4";
             txtMain.Text = textToOutput;
-            boolvariable = int.TryParse(textToOutput, out temporalcounter);
+            boolvariable = double.TryParse(textToOutput, out temporalcounter);
         }
 
         private void Button5_Click(object sender, EventArgs e)
         {
             textToOutput = textToOutput + "5";
             txtMain.Text = textToOutput;
-            boolvariable = int.TryParse(textToOutput, out temporalcounter);
+            boolvariable = double.TryParse(textToOutput, out temporalcounter);
         }
 
         private void Button6_Click(object sender, EventArgs e)
         {
             textToOutput = textToOutput + "6";
             txtMain.Text = textToOutput;
-            boolvariable = int.TryParse(textToOutput, out temporalcounter);
+            boolvariable = double.TryParse(textToOutput, out temporalcounter);
         }
 
         private void Button7_Click(object sender, EventArgs e)
         {
             textToOutput = textToOutput + "7";
             txtMain.Text = textToOutput;
-            boolvariable = int.TryParse(textToOutput, out temporalcounter);
+            boolvariable = double.TryParse(textToOutput, out temporalcounter);
         }
 
         private void Button8_Click(object sender, EventArgs e)
         {
             textToOutput = textToOutput + "8";
             txtMain.Text = textToOutput;
-            boolvariable = int.TryParse(textToOutput, out temporalcounter);
+            boolvariable = double.TryParse(textToOutput, out temporalcounter);
         }
 
         private void Button9_Click(object sender, EventArgs e)
         {
             textToOutput = textToOutput + "9";
             txtMain.Text = textToOutput;
-            boolvariable = int.TryParse(textToOutput, out temporalcounter);
+            boolvariable = double.TryParse(textToOutput, out temporalcounter);
         }
 
         private void Button10_Click(object sender, EventArgs e)
         {
             textToOutput = textToOutput + "0";
             txtMain.Text = textToOutput;
-            boolvariable = int.TryParse(textToOutput, out temporalcounter);
+            boolvariable = double.TryParse(textToOutput, out temporalcounter);
+        }
+
+        private void BtnComa_Click(object sender, EventArgs e)
+        {
+            textToOutput = textToOutput + ".";
+            txtMain.Text = textToOutput;
+            boolvariable = double.TryParse(textToOutput, out temporalcounter);
         }
 
         private void BtnPoint_Click(object sender, EventArgs e)
         {
             //All the variables names are gonna be reseted to their initial values.
             textToOutput = "";
-            temporalcounter = 0;
-            counter1 = 0;
-            counter2 = 0;
+            temporalcounter = 0.0;
+            counter1 = 0.0;
+            counter2 = 0.0;
             txtMain.Text = textToOutput;
         }
 
@@ -264,5 +271,7 @@ namespace IA2_CALCULATOR_srfn
             distance_convertor_Form DCF_distance = new distance_convertor_Form();
             DCF_distance.Show();
         }
+
+
     }
 }

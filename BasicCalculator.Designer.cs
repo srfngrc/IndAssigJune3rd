@@ -49,6 +49,7 @@
             this.btnCloseAll = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnComa = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -215,9 +216,9 @@
             // 
             // btnPoint
             // 
-            this.btnPoint.Location = new System.Drawing.Point(23, 215);
+            this.btnPoint.Location = new System.Drawing.Point(23, 257);
             this.btnPoint.Name = "btnPoint";
-            this.btnPoint.Size = new System.Drawing.Size(49, 36);
+            this.btnPoint.Size = new System.Drawing.Size(214, 26);
             this.btnPoint.TabIndex = 16;
             this.btnPoint.Text = "Delete";
             this.btnPoint.UseVisualStyleBackColor = true;
@@ -236,7 +237,7 @@
             // 
             // btnCloseAll
             // 
-            this.btnCloseAll.Location = new System.Drawing.Point(23, 333);
+            this.btnCloseAll.Location = new System.Drawing.Point(22, 357);
             this.btnCloseAll.Name = "btnCloseAll";
             this.btnCloseAll.Size = new System.Drawing.Size(215, 28);
             this.btnCloseAll.TabIndex = 20;
@@ -247,7 +248,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::IA2_CALCULATOR_srfn.Properties.Resources.distance_convertor;
-            this.pictureBox2.Location = new System.Drawing.Point(133, 268);
+            this.pictureBox2.Location = new System.Drawing.Point(133, 293);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(105, 58);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -258,7 +259,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::IA2_CALCULATOR_srfn.Properties.Resources.weigth_convertor;
-            this.pictureBox1.Location = new System.Drawing.Point(23, 268);
+            this.pictureBox1.Location = new System.Drawing.Point(23, 293);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(104, 58);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -266,11 +267,22 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
+            // btnComa
+            // 
+            this.btnComa.Location = new System.Drawing.Point(22, 215);
+            this.btnComa.Name = "btnComa";
+            this.btnComa.Size = new System.Drawing.Size(49, 36);
+            this.btnComa.TabIndex = 21;
+            this.btnComa.Text = ".";
+            this.btnComa.UseVisualStyleBackColor = true;
+            this.btnComa.Click += new System.EventHandler(this.BtnComa_Click);
+            // 
             // BasicCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(252, 373);
+            this.ClientSize = new System.Drawing.Size(252, 397);
+            this.Controls.Add(this.btnComa);
             this.Controls.Add(this.btnCloseAll);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -324,6 +336,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnCloseAll;
+        private System.Windows.Forms.Button btnComa;
     }
 }
 
