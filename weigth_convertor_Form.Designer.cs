@@ -39,16 +39,16 @@
             // 
             // TBlbsTOkgs
             // 
-            this.TBlbsTOkgs.Location = new System.Drawing.Point(173, 97);
+            this.TBlbsTOkgs.Location = new System.Drawing.Point(194, 128);
             this.TBlbsTOkgs.Name = "TBlbsTOkgs";
-            this.TBlbsTOkgs.Size = new System.Drawing.Size(140, 20);
+            this.TBlbsTOkgs.Size = new System.Drawing.Size(100, 20);
             this.TBlbsTOkgs.TabIndex = 2;
             this.TBlbsTOkgs.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::IA2_CALCULATOR_srfn.Properties.Resources.pounds;
-            this.pictureBox2.Location = new System.Drawing.Point(332, 53);
+            this.pictureBox2.Location = new System.Drawing.Point(314, 66);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(135, 135);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -59,7 +59,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::IA2_CALCULATOR_srfn.Properties.Resources.kilograms;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 53);
+            this.pictureBox1.Location = new System.Drawing.Point(32, 66);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(135, 135);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
